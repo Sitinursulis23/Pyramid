@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int Nilai = 0;
+int main()
+{
+	cout<<"Coding Piramid"<<endl;
+	cout<<"Masukan mau berapa baris \t= ";
+	cin>>Nilai;
+	for (int baris = 1; baris <= Nilai; baris++ ){
+		for (int kolom = Nilai; kolom > baris; kolom--){
+			cout<<" ";
+		}
+		for (int bintang = 1; bintang <=(2*baris-1); bintang++){
+			cout<<"*";
+		}
+		cout<<endl;
+	}
+	return 0;
+}
